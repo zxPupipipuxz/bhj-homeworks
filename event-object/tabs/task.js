@@ -1,5 +1,6 @@
-const tabs = Array.from(document.querySelectorAll('.tab'));
-const tabContents = Array.from(document.querySelectorAll('.tab__content'));
+const tabContainer = document.getElementById('tabs1')
+const tabs = Array.from(tabContainer.querySelectorAll('.tab'));
+const tabContents = Array.from(tabContainer.querySelectorAll('.tab__content'));
 
 for(let tab of tabs){
     tab.addEventListener('click', function(event) {
